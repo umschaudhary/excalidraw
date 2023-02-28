@@ -192,16 +192,16 @@ const ImageExportModal = ({
         </ExportButton>
         {/* firefox supports clipboard API under a flag,
             so let's throw and tell people what they can do */}
-        {(probablySupportsClipboardBlob || isFirefox) && (
-          <ExportButton
-            title={t("buttons.copyPngToClipboard")}
-            onClick={() => onExportToClipboard(exportedElements)}
-            color="gray"
-            shade={7}
-          >
-            {clipboard}
-          </ExportButton>
-        )}
+        {/* {(probablySupportsClipboardBlob || isFirefox) && ( */}
+        {/*   <ExportButton */}
+        {/*     title={t("buttons.copyPngToClipboard")} */}
+        {/*     onClick={() => onExportToClipboard(exportedElements)} */}
+        {/*     color="gray" */}
+        {/*     shade={7} */}
+        {/*   > */}
+        {/*     {clipboard} */}
+        {/*   </ExportButton> */}
+        {/* )} */}
       </Stack.Row>
     </div>
   );

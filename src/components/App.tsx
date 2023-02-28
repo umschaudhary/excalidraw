@@ -6184,7 +6184,7 @@ class App extends React.Component<AppProps, AppState> {
   ): ContextMenuItems => {
     const options: ContextMenuItems = [];
 
-    options.push(actionCopyAsPng, actionCopyAsSvg);
+    options.push(actionCopyAsSvg);
 
     // canvas contextMenu
     // -------------------------------------------------------------------------
@@ -6192,7 +6192,6 @@ class App extends React.Component<AppProps, AppState> {
     if (type === "canvas") {
       if (this.state.viewModeEnabled) {
         return [
-          ...options,
           actionToggleGridMode,
           actionToggleZenMode,
           actionToggleViewMode,
